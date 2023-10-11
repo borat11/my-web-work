@@ -1,0 +1,28 @@
+body{
+    background: rgb(202, 229, 177);
+}
+.card{
+    border: 10px black;
+    border-radius: 5px;
+}
+#view1{
+    display: none;
+}
+#view2{
+    display: none;
+}
+#view3{
+    display: none;
+}
+#view4{
+    display: none;
+}
+button{
+    margin: 5px;
+}
+button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+}

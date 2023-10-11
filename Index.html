@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <br>
+
+    <div class="container">
+        <div class="row">
+         
+            <div class="col"> 
+               
+
+                <div class=" p-1 bg-dark text-white rounded"style="text-align: center;" >
+                    <h1 >
+                        <b > PRODUCT LIST</b>
+                    </h1>
+                    
+                  </div>
+               
+            </div>
+        
+            
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 17em; border: black 10px;">
+                    <img src="Watch.jpg" class="card-img-top" alt="..." height="200px" width="100px">
+                    <div class="card-body">
+                      <h3 class="card-title" id="pro1">Watch</h3>
+                        <p><b>Price:</b>$50</p>
+                      <a href="#" class="btn btn-primary" id="first" onclick="work(1)" price="50">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 17rem; border: black 10px;">
+                    <img src="Air buds.jpg" class="card-img-top" alt="..."height="200px" width="100px">
+                    <div class="card-body">
+                      <h3 class="card-title" id="pro2">Air Buds</h3>
+                      <p><b>Price:</b>$40</p>
+                      <a href="#" class="btn btn-primary" id="second" onclick="work(2)"price="40">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 17rem; border: black 10px;">
+                    <img src="DrawingPad.webp" class="card-img-top" alt="..."height="200px" width="100px">
+                    <div class="card-body">
+                      <h3 class="card-title" id="pro3">Drawing-pad</h3>
+                      <p><b>Price:</b>$35</p>
+                      <a href="#" class="btn btn-primary" id="third" onclick="work(3)"price="35">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 17rem; border: black 10px;">
+                    <img src="HeadPhone.webp" class="card-img-top" alt="..."height="200px" width="100px">
+                    <div class="card-body">
+                      <h3 class="card-title" id="pro4">Head-phone</h3>
+                      <p><b>Price:</b>$55</p>
+                      <a href="#" class="btn btn-primary" id="fourth" onclick="work(4)"price="55">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+<div class="container">
+    <section class="container content-section">
+      <div class="row">
+        <h1 class="section-header border border-black" style="text-align: center;" ><b>CART</b></h1>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="cart-item cart-header cart-column text-decoration-underline"><b>ITEM</b></h3>
+        </div>
+
+        <div class="col-md-4 ">
+          <h3 class="cart-price cart-header cart-column text-decoration-underline"><b>PRICE</b></h3>
+        </div>
+        <div class="col-md-4">
+          <h3 class="cart-quantity cart-header cart-column text-decoration-underline"> <b>QUANTITY</b></h3>
+          
+        </div>
+      </div>
+      
+
+      <!--Item-->
+      <div id="view1">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="" id="name1"><b>ITEM</b></h5>
+        </div>
+
+        <div class="col-md-4 ">
+          <h5 class="" id="price1"><b>PRICE</b></h5>
+        </div>
+        <div class="col-md-4">
+          <h5 class="" id="quantity1"style="display: inline-block;"> <b>QUANTITY</b></h5>
+          <button class="btn btn-primary btn-purchase" style="margin-left:40% ; " onclick="remove(1)">Remove</button>
+        </div>
+      </div>
+</div>
+
+<!--Item-->
+<div id="view2">
+  <div class="row">
+    <div class="col-md-4">
+      <h5 class="" id="name2"><b>ITEM</b></h5>
+    </div>
+
+    <div class="col-md-4 ">
+      <h5 class="" id="price2"><b>PRICE</b></h5>
+    </div>
+    <div class="col-md-4">
+      <h5 class="" id="quantity2" style="display: inline-block;"> <b>QUANTITY</b></h5>
+      <button class="btn btn-primary btn-purchase" style="margin-left:40% ;" onclick="remove(2)">Remove</button>
+    </div>
+  </div>
+</div>
+
+<!--Item-->
+<div id="view3">
+  <div class="row">
+    <div class="col-md-4">
+      <h5 class="" id="name3"><b>ITEM</b></h5>
+    </div>
+
+    <div class="col-md-4 ">
+      <h5 class="" id="price3"><b>PRICE</b></h5>
+    </div>
+    <div class="col-md-4">
+      <h5 class=""style="display: inline-block;" id="quantity3"> <b>QUANTITY</b></h5>
+      <button class="btn btn-primary btn-purchase" style="margin-left:40% ;" onclick="remove(3)">Remove</button>
+    </div>
+  </div>
+</div>
+
+<!--Item-->
+<div id="view4">
+  <div class="row">
+    <div class="col-md-4">
+      <h5 class="" id="name4"><b>ITEM</b></h5>
+    </div>
+
+    <div class="col-md-4 ">
+      <h5 class="" id="price4"><b>PRICE</b></h5>
+    </div>
+    <div class="col-md-4">
+      <h5 class="" id="quantity4" style="display: inline-block;"> <b>QUANTITY</b></h5>
+      <button class="btn btn-primary btn-purchase" style="margin-left:40% ;" onclick="remove(4)">Remove</button>
+      
+
+    </div>
+  </div>
+</div>
+      
+    <br><hr>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price" id="totalP">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button" >PURCHASE</button>
+  </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+    <script src="Main.js"></script>
+    
+  </body>
+</html>
